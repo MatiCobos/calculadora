@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparto de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Escudos de San Lorenzo -->
+        <div class="escudos">
+            <img src="images/escudo-sanzl.png" alt="Escudo San Lorenzo" class="escudo">
+        </div>
+
+        <h1>Reparto de Gastos</h1>
+        
+        <!-- Campo de Nombre -->
+        <label for="nombre">Nombre de la persona:</label>
+        <input type="text" id="nombre" placeholder="Ingresa el nombre de la persona">
+        
+        <!-- Campo de Gasto -->
+        <label for="gasto">Monto gastado:</label>
+        <input type="number" id="gasto" placeholder="Monto gastado">
+        
+        <button id="agregarPersona">Agregar persona con gasto</button>
+
+        <h2>Lista de Personas con Gasto</h2>
+        <ul id="listaPersonas"></ul>
+
+        <!-- Total Gastado -->
+        <h2 id="totalGastos">Total Gastado: $0</h2>
+
+        <!-- Sugerencias de Transferencias -->
+        <ul id="sugerenciasTransferencias"></ul>
+        
+        <!-- Sección de personas que no gastaron -->
+        <div class="no-gastaron-section">
+            <label for="personasNoGastaron">Personas que no gastaron nada:</label>
+            <input type="text" id="personasNoGastaron" placeholder="Nombre de persona que no gastó nada">
+            <button id="agregarNoGastaron">Agregar persona sin gasto</button>
+            <ul id="listaNoGastaron"></ul>
+        </div>
+
+            <!-- Calcular Saldos -->
+            <button id="calcular">Calcular Saldos</button>
+
+        <!-- Mensajes de Confirmación -->
+        <div id="mensajeConfirmacion" style="display: none;"></div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
